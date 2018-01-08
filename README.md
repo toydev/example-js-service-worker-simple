@@ -11,6 +11,8 @@ Service Worker は Web ページとは別にバックグラウンドで動くプ
 ## 前提
 
  * サーバにアップロードの上、localhost もしくは https:// でアクセスする必要があります。
+ * 何らかの方法で HTTP ヘッダーに Service-Worker-allowed = "/" を設定する必要がある。
+   * Apache / mod_headers を前提に .htaccess にて HTTP ヘッダーを設定している。
 
 ## 動作確認方法
 

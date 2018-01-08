@@ -1,7 +1,7 @@
 if ('serviceWorker' in navigator) {
     result.innerHTML += '<li>Service Worker を登録します。</li>';
 
-    navigator.serviceWorker.register('./js/worker.js').then((reg) => {
+    navigator.serviceWorker.register('./js/worker.js', {scope: "."}).then((reg) => {
         result.innerHTML += `<li>Service Worker を登録しました。</li>`;
     });
 
